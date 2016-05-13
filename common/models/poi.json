@@ -1,0 +1,45 @@
+{
+  "name": "POI",
+  "plural": "POIs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "coordinates": {
+      "type": "geopoint",
+      "required": true
+    },
+    "category": {
+      "type": "string"
+    },
+    "tourOrder": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "openingHours": {
+      "type": "string"
+    },
+    "counter": {
+      "type": "number"
+    },
+    "lastModified": {
+      "type": "Date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
