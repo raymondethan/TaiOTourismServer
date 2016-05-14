@@ -16,22 +16,27 @@
       "required": true
     },
     "category": {
-      "type": "string"
+      "type": "string",
+      "default": "unknown category"
     },
     "tourOrder": {
-      "type": "number"
+      "type": "number",
+      "default": -1
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "default": "no description"
     },
     "rating": {
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "openingHours": {
       "type": "string"
     },
     "counter": {
-      "type": "number"
+      "type": "number",
+      "default": 0
     },
     "lastModified": {
       "type": "Date",

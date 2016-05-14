@@ -9,11 +9,11 @@ module.exports = function(Poi) {
                 response = "no posts";
             }
             cb(null, posts);
-            console.log(response);});
+            console.log("err: " + err);});
     }
     Poi.remoteMethod('getUpdate',{
         http: {path: '/getupdate', verb: 'get'},
         accepts: {arg: 'date', type: 'string', http: { source: 'query' } },
-        returns: {arg: 'pois', type: 'string'}
+        returns: {root: true, type: 'Array'}
     });
 };
