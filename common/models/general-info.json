@@ -1,0 +1,30 @@
+{
+  "name": "GeneralInfo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ywcaDesciptionEN": {
+      "type": "string",
+      "required": true
+    },
+    "ywcaDesciptionCH": {
+      "type": "string",
+      "required": true
+    },
+    "taiODescriptionEN": {
+      "type": "string",
+      "required": true
+    },
+    "taiODescriptionCH": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

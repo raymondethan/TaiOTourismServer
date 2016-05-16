@@ -19,5 +19,13 @@
   "POI": {
     "dataSource": "mysqlDs",
     "public": true
+  },
+  "GeneralInfo": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Reviews": {
+    "dataSource": "mysqlDs",
+    "public": true
   }
 }
