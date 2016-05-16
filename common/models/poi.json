@@ -42,7 +42,7 @@
       "type": "Date",
       "required": true
     },
-    "imageUrl": {
+    "pictureUrl": {
       "type": "string"
     }
   },
