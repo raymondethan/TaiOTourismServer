@@ -41,6 +41,9 @@
     "lastModified": {
       "type": "Date",
       "required": true
+    },
+    "imageUrl": {
+      "type": "string"
     }
   },
   "validations": [],
