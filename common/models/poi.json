@@ -28,7 +28,7 @@
       "default": "no description"
     },
     "rating": {
-      "type": "decimal",
+      "type": "number",
       "default": 0
     },
     "openingHours": {
