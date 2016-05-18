@@ -6,7 +6,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "ywcaDesciptionEN": {
+    "ywcaDesciption": {
       "type": "string",
       "required": true
     },
@@ -14,7 +14,7 @@
       "type": "string",
       "required": true
     },
-    "taiODescriptionEN": {
+    "taiODescription": {
       "type": "string",
       "required": true
     },
