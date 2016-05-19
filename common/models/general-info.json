@@ -21,10 +21,35 @@
     "taiODescriptionCH": {
       "type": "string",
       "required": true
+    },
+    "lastModified": {
+      "type": "Date",
+      "required": true
     }
   },
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": {}
+  "methods": {
+      "getUpdate": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "date",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": {
+        "root": true,
+        "type": "string"
+      },
+      "http": {
+        "path": "/getUpdate",
+        "verb": "get"
+      }
+    }
+  }
 }
