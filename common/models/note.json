@@ -1,11 +1,50 @@
 {
-  "name": "note",
+  "name": "PointOfInterest",
   "properties": {
-    "title": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "content": {
+    "nameCH": {
+      "type": "string",
+      "required": true
+    },
+    "coordinates": {
+      "type": "GeoPoint",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "default": "unknown category"
+    },
+    "tourOrder": {
+      "type": "number",
+      "default": -1
+    },
+    "description": {
+      "type": "string",
+      "default": "no description"
+    },
+    "descriptionCH": {
+      "type": "string",
+      "default": "no description"
+    },
+    "rating": {
+      "type": "number",
+      "default": 0
+    },
+    "openingHours": {
+      "type": "string"
+    },
+    "counter": {
+      "type": "number",
+      "default": 0
+    },
+    "lastModified": {
+      "type": "Date",
+      "required": true
+    },
+    "pictureUrl": {
       "type": "string"
     }
   },
@@ -13,11 +52,11 @@
   "relations": {},
   "acls": [],
   "methods": {
-    "greet": {
+    "getUpdate": {
       "isStatic": true,
       "accepts": [
         {
-          "arg": "msg",
+          "arg": "date",
           "type": "string",
           "http": {
             "source": "query"
@@ -25,10 +64,11 @@
         }
       ],
       "returns": {
-        "arg": "greeting",
+        "root": true,
         "type": "string"
       },
       "http": {
+        "path": "/getUpdate",
         "verb": "get"
       }
     }

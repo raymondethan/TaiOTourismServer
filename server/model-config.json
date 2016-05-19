@@ -13,19 +13,16 @@
       "./mixins"
     ]
   },
-  "note": {
-    "dataSource": "db"
-  },
-  "POI": {
-    "dataSource": "mysqlDs",
+  "PointOfInterest": {
+    "dataSource": "db",
     "public": true
   },
   "GeneralInfo": {
-    "dataSource": "mysqlDs",
+    "dataSource": "db",
     "public": true
   },
   "Reviews": {
-    "dataSource": "mysqlDs",
+    "dataSource": "db",
     "public": true
   }
 }

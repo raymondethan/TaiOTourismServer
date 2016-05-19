@@ -1,6 +1,5 @@
 {
   "name": "POI",
-  "plural": "POIs",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -16,7 +15,7 @@
       "required": true
     },
     "coordinates": {
-      "type": "geopoint",
+      "type": "GeoPoint",
       "required": true
     },
     "category": {
