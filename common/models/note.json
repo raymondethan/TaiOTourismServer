@@ -41,8 +41,7 @@
       "default": 0
     },
     "lastModified": {
-      "type": "Date",
-      "required": true
+      "type": "Date"
     },
     "pictureUrl": {
       "type": "string"

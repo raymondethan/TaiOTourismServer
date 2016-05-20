@@ -5,4 +5,10 @@ module.exports = function(GeneralInfo) {
             cb(null, posts);
             console.log("err: " + err);});
     }
+    GeneralInfo.observe('before save', function(ctx, next) {
+      lm = Date.now();
+      ctx.Model.lastModified = lm;
+      console.log("GeneralInfo inserted with timestamp " + lm)
+      next();
+    });
 };

@@ -47,9 +47,7 @@ myApp.config(['NgAdminConfigurationProvider', function (nga) {
         ]),
         nga.field('picture', 'file').uploadInformation({ 'url': 'http://0.0.0.0:3000/api/containers/:container/upload', 'apifilename': 'picture_name' }),
         nga.field('openingHours'),
-        nga.field('rating'),
-        nga.field('lastModified', 'datetime').label('Last Modified')
-            .validation({ required: true }),
+        nga.field('rating')
     ]);
     // use the same fields for the editionView as for the creationView
     poi.editionView().fields(poi.creationView().fields());

@@ -23,8 +23,7 @@
       "required": true
     },
     "lastModified": {
-      "type": "Date",
-      "required": true
+      "type": "Date"
     }
   },
   "validations": [],
